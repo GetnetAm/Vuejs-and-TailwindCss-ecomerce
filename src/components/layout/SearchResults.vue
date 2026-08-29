@@ -5,9 +5,6 @@ defineProps<{
   results: Product[]
 }>()
 
-// Typed emit: `select` always carries a full Product, so the parent
-// (Navbar) gets autocomplete on `product.id`, `product.name`, etc.
-// without needing to re-declare the shape.
 const emit = defineEmits<{
   select: [product: Product]
 }>()
@@ -36,8 +33,6 @@ const emit = defineEmits<{
       <span class="text-sm font-semibold text-accent shrink-0">${{ p.price.toFixed(2) }}</span>
     </button>
 
-    <p v-if="!results.length" class="px-4 py-3 text-sm text-muted">
-      No products found.
-    </p>
+    <p v-if="!results.length" class="px-4 py-3 text-sm text-muted">No products found.</p>
   </div>
 </template>

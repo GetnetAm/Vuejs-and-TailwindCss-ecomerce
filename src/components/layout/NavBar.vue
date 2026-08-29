@@ -118,7 +118,7 @@ function handleEscape(): void {
         <div class="absolute left-0 top-0 h-full w-72 bg-navy text-white p-5 overflow-y-auto">
           <div class="flex justify-between items-center mb-6">
             <span class="font-display font-bold text-lg"
-              >Aman<span class="text-accent">Market</span></span
+              >gebaye<span class="text-accent">Shopping</span></span
             >
             <button @click="drawerOpen = false" aria-label="Close menu">
               <svg width="22" height="22" fill="none" stroke="currentColor" stroke-width="2">
