@@ -27,6 +27,6 @@ export const categories = [
     slug: 'toys-hobbies-media',
     label: 'Toys, Hobbies & Media',
     code: 'TH',
-    subCategories: ['Books', 'Video Games',],
+    subCategories: ['Books', 'Video Games'],
   },
 ]

@@ -10,7 +10,7 @@ import type { Product } from '@/types'
 const products = ref<Product[]>([])
 const loading = ref<boolean>(true)
 
-const featuredProducts = computed<Product[]>(() => products.value.filter(p => p.featured))
+const featuredProducts = computed<Product[]>(() => products.value.filter((p) => p.featured))
 
 onMounted(async () => {
   try {
