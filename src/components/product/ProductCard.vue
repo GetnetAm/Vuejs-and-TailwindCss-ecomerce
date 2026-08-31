@@ -26,13 +26,12 @@ const discountPercent = computed(() =>
   props.originalPrice ? Math.round((1 - props.price / props.originalPrice) * 100) : null
 )
 
-// Function to handle external redirect
+
 const goToEcommercePage = () => {
   // Redirects the current tab to your external store URL
   window.location.href = 'https://www.amazon.com/'
 
-  // Alternatively, if you want to open the link in a new tab, use:
-  // window.open('https://your-external-store.com', '_blank')
+
 }
 </script>
 
@@ -48,6 +47,7 @@ const goToEcommercePage = () => {
         class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
         :class="imageLoaded ? 'opacity-100' : 'opacity-0'"
       />
+      
       <span v-if="discountPercent" class="absolute top-2 left-2 bg-accent text-white text-[11px] font-semibold px-2 py-1 rounded-full">
         -{{ discountPercent }}%
       </span>
