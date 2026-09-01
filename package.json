@@ -40,8 +40,12 @@
     "vitest": "^4.1.10",
     "vue-tsc": "^3.3.7"
   },
+  "optionalDependencies": {
+    "lightningcss-linux-x64-gnu": "^1.33.0",
+    "lightningcss-win32-x64-msvc": "^1.33.0"
+  },
   "overrides": {
-    "vue": "rc",
+    "@vue/compat": "rc",
     "@vue/compiler-core": "rc",
     "@vue/compiler-dom": "rc",
     "@vue/compiler-sfc": "rc",
@@ -53,10 +57,6 @@
     "@vue/runtime-vapor": "rc",
     "@vue/server-renderer": "rc",
     "@vue/shared": "rc",
-    "@vue/compat": "rc"
-  },
-  "optionalDependencies": {
-    "lightningcss-linux-x64-gnu": "^1.33.0",
-    "lightningcss-win32-x64-msvc": "^1.33.0"
+    "vue": "rc"
   }
 }
